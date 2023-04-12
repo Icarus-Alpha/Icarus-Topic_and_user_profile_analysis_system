@@ -125,13 +125,13 @@ export default {
 <style scpoed>
 .topic_hot {
   background-color: #fff;
-  height: 41%;
+  height: 41.6%;
   position: relative;
 }
 #lineChart {
   left: 20px;
-  width: 1000px;
-  height: 400px;
+  width: 875px;
+  height: 300px;
 }
 .topic_hot_top {
   height: 10%;

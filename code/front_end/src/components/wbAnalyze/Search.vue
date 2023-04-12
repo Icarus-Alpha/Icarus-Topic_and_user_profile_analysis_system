@@ -92,6 +92,9 @@ export default {
 .search {
   display: flex;
 }
+.key {
+  display: flex;
+}
 .input {
   position: relative;
   top: 5px;
@@ -102,14 +105,15 @@ export default {
   border: 1px solid #ccc;
 }
 .key {
-  width: 570px;
-  height: 24px;
-  margin: 7px 10px;
+  width: 98%;
+  height: 100%;
+  margin: 5px 5px;
   outline: none;
   border: 0;
   font-size: 20px;
   letter-spacing: 1px;
 }
+
 .search_button {
   margin: 6px;
 }

@@ -16,7 +16,6 @@ import "animate.css"
 import 'font-awesome/css/font-awesome.min.css'
 //引入element-ui组件库
 import './plugins/element.js'
-
 // 将echarts保存为全局变量
 Vue.prototype.$echarts = echarts;
 

@@ -5,7 +5,7 @@
       <div class="bg" @click="bgClick">
         <h1>{{ currentTime }}</h1>
         <p>{{ currentDate }}</p>
-        <h5>designed&created by yuan</h5>
+        <h5>designed&created by hljut</h5>
         <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
         <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
         <h6>点击向下滑动</h6>
@@ -196,9 +196,20 @@ export default {
 </script>
 
 <style scoped>
+
+@font-face {
+  font-family: "bw";
+  src: url("https://robindelaporte.fr/codepen/play/BwModelicaSS01-ExtraBold.woff") format("woff");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
 .home {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }

@@ -2,6 +2,7 @@
   <div id="app">
     <router-view class="system"></router-view>
   </div>
+  
 </template>
 
 <script>

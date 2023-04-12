@@ -4,56 +4,58 @@
       <!-- 注册页面 -->
       <div class="container-form container-signup">
         <form action="javascript:void(0);" class="form">
-          <h2 class="form-title">Sign Up</h2>
+          <h2 class="form-title">注册界面</h2>
           <input
             type="text"
-            placeholder="User"
+            placeholder="用户名"
             class="input"
             v-model="sign_up_user"
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="电子邮箱"
             class="input"
             v-model="email"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="密码"
             class="input"
             v-model="sign_up_password"
           />
-          <button class="submit" @click="SignUp">sign up</button>
+          <button class="submit" @click="SignUp">注册</button>
         </form>
       </div>
       <!-- 登录页面 -->
       <div class="container-form container-signin">
         <form action="javascript:void(0);" class="form">
-          <h2 class="form-title">Sign In</h2>
+          <h2 class="form-title">登录界面</h2>
           <input
             type="text"
-            placeholder="User"
+            placeholder="用户名"
             class="input"
             v-model="sign_in_user"
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="密码"
             class="input"
             v-model="sign_in_password"
           />
-          <a href="javascript:void(0);">forget your password?</a>
-          <button class="submit" @click="SignIn">sign in</button>
+          <font size="1" class="passwordsize">
+          <a href="javascript:void(0);">忘记你的密码?</a>
+          </font>
+          <button class="submit" @click="SignIn">登录</button>
         </form>
       </div>
       <!-- 覆盖层 -->
       <div class="container-overlay">
         <div class="overlay">
           <div class="overlay-slide overlay-left">
-            <button class="submit" id="goSignIn">sign up</button>
+            <button class="submit" id="goSignIn">注册</button>
           </div>
           <div class="overlay-slide overlay-right">
-            <button class="submit" id="goSignUp">sign in</button>
+            <button class="submit" id="goSignUp">登录</button>
           </div>
         </div>
       </div>
@@ -169,7 +171,7 @@ export default {
 /* 清除input、button默认边框以及点击高亮 */
 input,
 button {
-  outline: none;
+  outline: none; 
   border: none;
 }
 /* 清除a标签默认下划线 颜色设置为#333 */
@@ -191,7 +193,7 @@ a {
 /* 盒子样式 */
 .container {
   position: relative;
-  width: 50vw;
+  width: 50%;
   height: 70vh;
   background-color: #e9e9e9;
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3),
@@ -299,28 +301,70 @@ a {
   height: 8%;
   margin: 0.5rem 0;
   padding: 1rem;
+  border-radius: 2rem;
+  max-width: 220px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+.input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+.input:active {
+  transform: scale(0.95);
+}
+.input:focus {
+  border: 2px solid grey;
+}
+
+/*设置忘记密码在表格中占的尺寸*/
+.passwordsize{
+  width: 100%;
+  height: 8%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  max-width: 240px;
 }
 /* 设置表单标题样式 */
 .form-title {
   font-weight: 300;
   margin-bottom: 1rem;
 }
-/* 设置按钮样式 */
-.submit {
-  padding: 1rem 3rem;
-  background-image: -webkit-linear-gradient(40deg, #0367a6 0%, #008997 70%);
-  border-radius: 1rem;
-  color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: transform 0.1s ease-in-out;
-}
+
 /* 只设置表单按钮的外边距 */
 .form > .submit {
   margin-top: 1.5rem;
 }
 /* 设置按钮按下样式 */
-.submit:active {
-  transform: scale(0.95);
+
+/*登录按钮 */
+button {
+  padding: 1.3em 5em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
 }
 </style>

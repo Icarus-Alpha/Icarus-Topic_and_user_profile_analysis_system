@@ -93,7 +93,7 @@ export default {
 <style scpoed>
 .blog_hot {
   position: relative;
-  background-color: #fff;
+  background-color:transparent;
   height: 57%;
 }
 .blog_hot_top {

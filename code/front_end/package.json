@@ -1,5 +1,5 @@
 {
-  "name": "yuqing1",
+  "name": "yuqing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,7 @@
     "animate.css": "^4.1.1",
     "axios": "^0.21.4",
     "core-js": "^3.6.5",
+    "css-doodle": "^0.34.8",
     "echarts": "^5.2.0",
     "echarts-wordcloud": "^2.0.0",
     "element-ui": "^2.15.6",
