@@ -15,7 +15,7 @@ class MyCloud:
     def __init__(self, content: list):
         self.content = content
         # TODO path
-        self.stop_words = [w.strip() for w in open('E:\study\lab\大二年度项目\yuqing_fastapi\src\dict\哈工大停用词表.txt', 'r', encoding='UTF-8').readlines()]
+        self.stop_words = [w.strip() for w in open('../../dict/哈工大停用词表.txt', 'r', encoding='UTF-8').readlines()]
         self.words_list = list()  # 分词表
         self.words_dict = dict()  # 词语和对应出现次数 字典
 
