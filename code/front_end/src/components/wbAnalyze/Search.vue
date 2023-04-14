@@ -1,15 +1,8 @@
 <template>
   <div class="search">
-    <div class="input">
-      <input
-        type="text"
-        v-model="key_word"
-        class="key"
-        placeholder="搜索话题"
-      />
-    </div>
+    <input type="text" v-model="key_word" class="input" placeholder="搜索话题" size="50" />
     <div class="search_button">
-      <button @click="search()">搜索</button>
+      <button @click="search()" class="btn">搜索</button>
     </div>
     <div class="searchResult" v-show="searchResult">
       <div class="title">
@@ -33,7 +26,7 @@
           {{ result.text | snippet }}
         </div>
         <div class="msg">
-          关注({{result.attitudes_count}}),评论({{result.comments_count}}),热度({{result.hot_count}})
+          关注({{ result.attitudes_count }}),评论({{ result.comments_count }}),热度({{ result.hot_count }})
         </div>
       </div>
     </div>
@@ -61,20 +54,20 @@ export default {
     search() {
       // console.log(this.key_word);
       this.searchResult = true;
-      this.$axios.get("search?tag="+ this.key_word + "&cursor=1").then((res) => {
+      this.$axios.get("search?tag=" + this.key_word + "&cursor=1").then((res) => {
         console.log(res)
         this.results = res.data.data.result;
       });
     },
-    add(){
-      this.$axios.get('add_task?tag=' + this.key_word).then((res) =>{
+    add() {
+      this.$axios.get('add_task?tag=' + this.key_word).then((res) => {
         console.log(res)
       });
       this.$confirm('此操作将分析该话题, 是否继续?', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
       }).then(() => {
-        this.$axios.get('add_task?tag=' + this.key_word).then((res) =>{
+        this.$axios.get('add_task?tag=' + this.key_word).then((res) => {
           console.log(res)
         });
       }).catch(() => {
@@ -92,18 +85,28 @@ export default {
 .search {
   display: flex;
 }
+
 .key {
   display: flex;
 }
+
 .input {
   position: relative;
-  top: 5px;
+  top: 14px;
   margin: 0 10px;
-  width: 50%;
   height: 70%;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  color: #8707ff;
+  border: 2px solid #8707ff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: transparent;
+
 }
+
+.input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
 .key {
   width: 98%;
   height: 100%;
@@ -114,18 +117,40 @@ export default {
   letter-spacing: 1px;
 }
 
+
 .search_button {
   margin: 6px;
 }
-.search_button button {
-  background-color: #00ad62;
-  color: #fff;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-  width: 80px;
-  height: 40px;
+
+.btn {
+  top: 10px;
+  margin: 6px;
 }
+
+.btn {
+  border: none;
+  background-color: #8707ff;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transform: translate(1) translate(0, 0);
+  transition: transform 225ms, box-shadow 225ms;
+}
+
+.btn:hover {
+  transform: scale(1.05) translate(0, -0.15rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  transform: scale(1) translate(0, 0.15rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
 .searchResult {
   position: absolute;
   width: 30%;
@@ -136,29 +161,35 @@ export default {
   border-right: 10px solid #ccc;
   border-left: 10px solid #ccc;
 }
+
 .searchResult::-webkit-scrollbar {
   display: none;
 }
+
 .userinfo {
   display: flex;
 }
+
 .userAvator {
   width: 70px;
   height: 70px;
   margin-right: 15px;
   margin-left: 20px;
 }
-.headimg{
+
+.headimg {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
+
 .username {
   color: #539ce5;
   margin-top: 15px;
-  font: 20px Helvetica,Verdana,Arial,SimHei,SimSun-ExtB;
+  font: 20px Helvetica, Verdana, Arial, SimHei, SimSun-ExtB;
   margin-bottom: 5px;
 }
+
 .result {
   padding-top: 15px;
   height: 20vh;
@@ -167,18 +198,22 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.other-info{
+
+.other-info {
   color: #888788;
 }
-.result:hover{
+
+.result:hover {
   background: #ccc;
   box-shadow: #888 0 0 0;
   cursor: pointer;
 }
+
 .text {
-  margin: 20px 0 0 20px;
+  margin: 80px 0 0 80px;
   flex: 1;
 }
+
 .title {
   font-size: 25px;
   font-weight: 600;
@@ -186,15 +221,16 @@ export default {
   margin-bottom: 10px;
   border-bottom: 5px solid #ccc;
 }
+
 .close {
   font-size: 25px;
   height: 20px;
   color: #000;
   float: right;
 }
-.msg{
+
+.msg {
   margin-bottom: 10px;
   margin-left: 20px;
   color: #ccc;
-}
-</style>
+}</style>

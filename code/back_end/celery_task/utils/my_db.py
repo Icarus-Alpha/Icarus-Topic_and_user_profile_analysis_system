@@ -5,7 +5,7 @@
 """
 import pymongo
 import motor.motor_asyncio
-from elasticsearch import AsyncElasticsearch
+# from elasticsearch import AsyncElasticsearch
 from celery_task.config import es_conf, mongo_conf
 
 

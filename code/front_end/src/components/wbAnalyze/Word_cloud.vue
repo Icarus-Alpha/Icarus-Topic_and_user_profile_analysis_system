@@ -103,6 +103,7 @@ export default {
   width: 100%;
   height: 30%;
   background-color: #fff;
+  /* background-color:transparent; */
 }
 .word_cloud_top {
   margin-left: 10px;

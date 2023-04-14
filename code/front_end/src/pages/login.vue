@@ -304,6 +304,7 @@ a {
   border-radius: 2rem;
   max-width: 220px;
   border-radius: 12px;
+  color: #000000;
   border: 1.5px solid lightgrey;
   outline: none;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);

@@ -141,6 +141,7 @@ export default {
   height: 100%;
   width: 100%;
   background-color: #fff;
+  /* background-color:transparent; */
 }
 .default_panel_top {
   padding-top: 10px;

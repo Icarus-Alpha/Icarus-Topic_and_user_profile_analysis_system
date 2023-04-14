@@ -138,13 +138,15 @@ export default {
 <style scpoed>
 .relation_graph_top {
   margin-left: 10px;
+
 }
 .relation_graph {
   background-color: #fff;
+  /* background-color:transparent; */
   position: absolute;
   top: 31%;
   width: 100%;
-  height: 68%;
+  height: 590.219px;
 }
 #show_graph {
   height: 500px;

@@ -93,7 +93,11 @@ export default {
 <style scpoed>
 .blog_hot {
   position: relative;
-  background-color:transparent;
+  background-color: white;
+  /* background-color:transparent; */
+  /* 设置背景透明度 */
+  /* background-color: #fff;
+  opacity: 0.5; */
   height: 57%;
 }
 .blog_hot_top {

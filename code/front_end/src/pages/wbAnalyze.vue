@@ -1,5 +1,6 @@
 <template>
   <div class="wbAnalyze">
+
     <css-doodle>
       --color: #51eaea, #fffde1, #ff9d76, #FB3569;
 
@@ -46,6 +47,7 @@
       }
       }
     </css-doodle>
+
     <div class="side">
       <SideBorder />
     </div>
@@ -107,12 +109,17 @@ export default {
 <style scoped>
 css-doodle {
   /* 将<css-doodle>元素定位在左上角 */
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
   position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
+  justify-content: center;
   /* 将<css-doodle>元素的z-index设置为-1，使其在其他元素之下 */
-  z-index: 1;
+  z-index: -1;
 }
+
 .wbAnalyze {
   width: 100%;
   display: flex;
@@ -121,13 +128,18 @@ css-doodle {
 
 .side {
   width: 50px;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container {
-  background-color:transparent;
+  background-color: transparent;
   width: 100%;
   height: 100%;
   z-index: 1;
+  margin: 0;
+  overflow: hidden;
 }
 
 .top {
@@ -176,4 +188,5 @@ css-doodle {
 
 .graph {
   width: 100%;
-}</style>
+}
+</style>

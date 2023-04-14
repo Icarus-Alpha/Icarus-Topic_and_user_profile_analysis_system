@@ -53,8 +53,8 @@ class WeiboLogin():
 
 
 if __name__ == '__main__':
-    username = 'tnnmyvxj27431@sina.com'
-    password = 'cxy633lil'
+    username = '15604688589'
+    password = 'KAI20020817'
     cookie_str = None
     try:
         cookie_str = WeiboLogin(username, password).run()
