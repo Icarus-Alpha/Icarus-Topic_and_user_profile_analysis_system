@@ -104,11 +104,12 @@ export default {
 
 .blog_hot {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 1%;
 }
 
 .topic_hot {
   width: 100%;
+  height: 42%;
 }
 
 .word {

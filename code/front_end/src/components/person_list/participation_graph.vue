@@ -81,8 +81,15 @@ export default {
 </script>
 
 <style scoped>
-#participation_graph{
+.participation_graph {
+  width: 1080px;
+  height: 840px;
+  background-color: transparent;
+  box-shadow:inset 0 0 9px 1px white;
+}
+/* #participation_graph{
     width: 1080px;
     height: 840px;
-}
+    background-color:transparent;
+} */
 </style>

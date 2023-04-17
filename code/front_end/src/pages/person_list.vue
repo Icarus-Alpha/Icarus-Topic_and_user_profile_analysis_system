@@ -31,18 +31,16 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #eee;
+  background-color: #a13b3b;
 }
 .side{
     width: 50px;
 }
-.participation_list,
 .participation_graph {
   float: left;
   position: relative;
   width: 25%;
   height: 100%;
-  background-color: #fff;
   margin-left: 0.5%;
 }
 .participation_graph {

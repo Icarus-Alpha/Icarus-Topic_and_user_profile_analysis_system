@@ -48,7 +48,7 @@ export default {
   top: -100vh;
   width: 50px;
   height: 50px;
-  background: #418de6 url("../assets/img/logo.png") no-repeat center center/40px;
+  background: #68a2e6 url("../assets/img/logo.png") no-repeat center center/40px;
 }
 .logo:hover {
   cursor: pointer;

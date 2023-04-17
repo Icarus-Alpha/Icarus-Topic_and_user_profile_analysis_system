@@ -93,8 +93,9 @@ export default {
 <style scpoed>
 .blog_hot {
   position: relative;
-  background-color: white;
-  /* background-color:transparent; */
+  /* background-color: white; */
+  box-shadow:inset 0 0 9px 1px white;
+  background-color:transparent;
   /* 设置背景透明度 */
   /* background-color: #fff;
   opacity: 0.5; */
@@ -108,8 +109,7 @@ export default {
 .learnmore{
   position: relative;
   float: top;
-  margin: 2% 0;
-  height: 20%;
+  height: 15%;
 }
 .learnmore button {
   display: block;
@@ -127,7 +127,7 @@ export default {
   background-color: #3ae050;
 }
 .ten_hot_blogs {
-  height: 120%;
+  height: 65%;
   position: relative;
   margin-left: 70px;
   margin-top: 10px;

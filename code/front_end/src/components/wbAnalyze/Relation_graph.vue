@@ -136,17 +136,21 @@ export default {
 </script>
 
 <style scpoed>
+.relation_graph_top:hover {
+  cursor: pointer;
+}
 .relation_graph_top {
   margin-left: 10px;
 
 }
 .relation_graph {
-  background-color: #fff;
-  /* background-color:transparent; */
+  /* background-color: #fff; */
+  background-color:transparent;
+  box-shadow:inset 0 0 9px 1px white;
   position: absolute;
   top: 31%;
   width: 100%;
-  height: 590.219px;
+  height: 69%;
 }
 #show_graph {
   height: 500px;

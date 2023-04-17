@@ -102,8 +102,9 @@ export default {
   position: absolute;
   width: 100%;
   height: 30%;
-  background-color: #fff;
-  /* background-color:transparent; */
+  /* background-color: #fff; */
+  background-color:transparent;
+  box-shadow:inset 0 0 9px 1px white;
 }
 .word_cloud_top {
   margin-left: 10px;

@@ -43,7 +43,7 @@
             v-model="sign_in_password"
           />
           <font size="1" class="passwordsize">
-          <a href="javascript:void(0);">忘记你的密码?</a>
+          <a href="javascript:void(0);">忘记你的密码？</a>
           </font>
           <button class="submit" @click="SignIn">登录</button>
         </form>
@@ -87,7 +87,7 @@ export default {
       });
     },
     switch() {
-      // 我们需要获取两个切换按钮 因此需要到html结构中 定义特殊类名或id名
+      // 我们需要获取两个切换按钮 因此需要到 html 结构中 定义特殊类名或 id 名
       const goSignIn = document.querySelector("#goSignIn");
       const goSignUp = document.querySelector("#goSignUp");
       // 获取被切换的样式类
@@ -121,7 +121,7 @@ export default {
     },
     SignIn() {
       this.getUserInfo();
-      //flag: 0未找到账户 flag: 1账户存在密码不对 flag: 2账户密码都正确
+      //flag: 0 未找到账户 flag: 1 账户存在密码不对 flag: 2 账户密码都正确
       let flag = 0;
       Object.keys(this.all_info).forEach((key) => {
         if (this.sign_in_user == key) {
@@ -168,13 +168,13 @@ export default {
 * {
   box-sizing: border-box;
 }
-/* 清除input、button默认边框以及点击高亮 */
+/* 清除 input、button 默认边框以及点击高亮 */
 input,
 button {
   outline: none; 
   border: none;
 }
-/* 清除a标签默认下划线 颜色设置为#333 */
+/* 清除 a 标签默认下划线 颜色设置为#333 */
 a {
   text-decoration: none;
   color: #333;
@@ -201,7 +201,7 @@ a {
   border-radius: 1rem;
   overflow: hidden;
 }
-/* 将两个form表单设置绝对定位 */
+/* 将两个 form 表单设置绝对定位 */
 .container-form {
   position: absolute;
   top: 0;
@@ -222,7 +222,7 @@ a {
   z-index: 2;
   opacity: 1;
 }
-/* 默认显示signup注册页，通过操作switch类名 显示登录页 */
+/* 默认显示 signup 注册页，通过操作 switch 类名 显示登录页 */
 .container.switch .container-signin {
   transform: translateX(100%);
   z-index: 5;
@@ -256,7 +256,7 @@ a {
   background-size: cover;
   transition: transform 0.5s ease-in-out;
 }
-/* 默认左边显示 通过操作switch类名显示登录页 */
+/* 默认左边显示 通过操作 switch 类名显示登录页 */
 .container.switch .container-overlay {
   transform: translateX(-100%);
 }
@@ -295,8 +295,9 @@ a {
   height: 100%;
   padding: 0 1rem;
 }
-/* 设置input标签样式 */
+/* 设置 input 标签样式 */
 .input {
+  top: 0;
   width: 100%;
   height: 8%;
   margin: 0.5rem 0;

@@ -2,7 +2,7 @@
   <div class="search">
     <input type="text" v-model="key_word" class="input" placeholder="搜索话题" size="50" />
     <div class="search_button">
-      <button @click="search()" class="btn">搜索</button>
+      <button @click="search()" class="blog_btn">搜索</button>
     </div>
     <div class="searchResult" v-show="searchResult">
       <div class="title">
@@ -84,6 +84,7 @@ export default {
 <style scpoed>
 .search {
   display: flex;
+  height: 100%;
 }
 
 .key {
@@ -92,9 +93,9 @@ export default {
 
 .input {
   position: relative;
-  top: 14px;
+  top: 32%;
   margin: 0 10px;
-  height: 70%;
+  height: 15%;
   color: #8707ff;
   border: 2px solid #8707ff;
   border-radius: 30px;
@@ -118,16 +119,13 @@ export default {
 }
 
 
-.search_button {
-  margin: 6px;
+.blog_btn {
+  margin: 10% 5px;
+  height: 95%;
+  width: 90%;
 }
 
-.btn {
-  top: 10px;
-  margin: 6px;
-}
-
-.btn {
+.blog_btn {
   border: none;
   background-color: #8707ff;
   color: white;
@@ -141,12 +139,12 @@ export default {
   transition: transform 225ms, box-shadow 225ms;
 }
 
-.btn:hover {
+.blog_btn:hover {
   transform: scale(1.05) translate(0, -0.15rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
 }
 
-.btn:active {
+.blog_btn:active {
   transform: scale(1) translate(0, 0.15rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

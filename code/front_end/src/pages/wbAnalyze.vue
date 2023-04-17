@@ -2,50 +2,7 @@
   <div class="wbAnalyze">
 
     <css-doodle>
-      --color: #51eaea, #fffde1, #ff9d76, #FB3569;
-
-      @grid: 30x1 / 100vw 100vh / #270f34;
-
-      :container {
-      perspective: 30vmin;
-      --deg: @p(-180deg, 180deg);
-      }
-
-      :after, :before {
-      content: '';
-      background: @p(--color);
-      @place: @r(100%) @r(100%);
-      @size: @r(6px);
-      @shape: heart;
-      }
-
-      @place: center;
-      @size: 18vmin;
-
-      box-shadow: @m2(0 0 50px @p(--color));
-      background: @m100(
-      radial-gradient(@p(--color) 50%, transparent 0)
-      @r(-20%, 120%) @r(-20%, 100%) / 1px 1px
-      no-repeat
-      );
-
-      will-change: transform, opacity;
-      animation: scale-up 12s linear infinite;
-      animation-delay: calc(-12s / @I * @i);
-
-      @keyframes scale-up {
-      0%, 95.01%, 100% {
-      transform: translateZ(0) rotate(0);
-      opacity: 0;
-      }
-      10% {
-      opacity: 1;
-      }
-      95% {
-      transform:
-      translateZ(35vmin) rotateZ(var(--deg));
-      }
-      }
+      
     </css-doodle>
 
     <div class="side">
@@ -60,12 +17,8 @@
           <DefaultPanel />
         </div>
         <div class="center">
-          <div class="blog_hot">
-            <BlogHot />
-          </div>
-          <div class="topic_hot">
-            <TopicHot />
-          </div>
+          <BlogHot />
+          <TopicHot />
         </div>
         <div class="right">
           <div class="word">
@@ -116,28 +69,29 @@ css-doodle {
   position: absolute;
   align-items: center;
   justify-content: center;
-  /* 将<css-doodle>元素的z-index设置为-1，使其在其他元素之下 */
+  /* 将<css-doodle>元素的 z-index 设置为 -1，使其在其他元素之下 */
   z-index: -1;
 }
 
 .wbAnalyze {
+  background-color: rgb(106, 88, 88);
+  z-index: 1;
   width: 100%;
   display: flex;
   height: 100%;
 }
 
 .side {
-  width: 50px;
+  width: 3.5%;
   z-index: 1;
   margin: 0;
-  overflow: hidden;
 }
 
 .container {
-  background-color: transparent;
+  /* background-color: transparent; */
+
   width: 100%;
   height: 100%;
-  z-index: 1;
   margin: 0;
   overflow: hidden;
 }
@@ -161,7 +115,7 @@ css-doodle {
   height: 100%;
   float: left;
   width: 55%;
-  margin: 0 10px;
+  margin: 0 0.5%;
   position: relative;
 }
 
@@ -173,14 +127,15 @@ css-doodle {
 }
 
 .blog_hot {
+  margin-bottom: 1%;
+  height: 57%;
   width: 100%;
-  margin-bottom: 10px;
 }
 
 .topic_hot {
   width: 100%;
+  height: 41.8%;
 }
-
 .word {
   width: 100%;
   margin-bottom: 10px;

@@ -140,8 +140,9 @@ export default {
 .default_panel {
   height: 100%;
   width: 100%;
-  background-color: #fff;
-  /* background-color:transparent; */
+  /* background-color: #fff; */
+  background-color:transparent;
+  box-shadow:inset 0 0 9px 1px white;
 }
 .default_panel_top {
   padding-top: 10px;

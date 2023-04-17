@@ -124,9 +124,10 @@ export default {
 
 <style scpoed>
 .topic_hot {
-  background-color: #fff;
-  /* background-color:transparent; */
-  height: 358.704px;
+  /* background-color: #fff; */
+  background-color:transparent;
+  box-shadow:inset 0 0 9px 1px white;
+  height: 42%;
   position: relative;
 }
 #lineChart {

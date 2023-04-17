@@ -64,9 +64,17 @@ export default {
 </script>
 
 <style scoped>
+.participation_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:inset 0 0 9px 1px white;
+}
 .participation_list_title {
   position: relative;
-  margin: 10% auto;
+  margin: 3% auto;
   width: 25vw;
   font-size: 1.3rem;
   font-weight: 600;
