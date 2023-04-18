@@ -1,5 +1,10 @@
 <template>
   <div class="propagate_tree">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
+
     <div class="propagate_tree_title">传播树</div>
     <el-button type="text" @click="show" class="maxTree"
       >点击打开 Dialog</el-button
@@ -153,13 +158,19 @@ export default {
   top: 1%;
   width: 100%;
   height: 99%;
-  background-color: #fff;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
+  background-color:transparent;
 }
 .propagate_tree_title {
   margin-left: 20px;
   padding: 5px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  margin: 2%;
+  letter-spacing: 4px;
 }
 #propagate_tree_graph {
   width: 550px;

@@ -1,5 +1,10 @@
 <template>
   <div class="essential_node">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
+
     <div class="essential_node_title">关键转发节点</div>
     <div class="essential_node_contents">
       <div
@@ -56,18 +61,25 @@ export default {
   margin-left: 5px;
   top: 58%;
   height: 42%;
-  background-color: #fff;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
+  background-color:transparent;
 }
 .essential_node_title {
   margin: 10px 20px;
   padding: 5px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  margin: 2%;
+  letter-spacing: 4px;
 }
 .essential_node_content {
   margin-left: 20px;
   padding: 5px;
   font-size: 14px;
+  color: #fff;
 }
 .essential_node_number {
   display: inline-block;

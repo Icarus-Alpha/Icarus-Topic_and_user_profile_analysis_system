@@ -1,5 +1,9 @@
 <template>
   <div class="relation_graph">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="relation_graph_top" @click="ToPersonList">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-wangluoguanxitu"></use>
@@ -136,6 +140,14 @@ export default {
 </script>
 
 <style scpoed>
+.relation_graph_top span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  margin: 2%;
+  letter-spacing: 4px;
+}
+
 .relation_graph_top:hover {
   cursor: pointer;
 }
@@ -146,14 +158,15 @@ export default {
 .relation_graph {
   /* background-color: #fff; */
   background-color:transparent;
-  box-shadow:inset 0 0 9px 1px white;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
   position: absolute;
   top: 31%;
   width: 100%;
   height: 69%;
 }
 #show_graph {
-  height: 500px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
 }
 </style>

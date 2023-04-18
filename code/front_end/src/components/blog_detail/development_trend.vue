@@ -1,5 +1,9 @@
 <template>
   <div class="development_trend">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="development_trend_title">发展趋势</div>
     <div id="development_trend_line"></div>
   </div>
@@ -66,13 +70,19 @@ export default {
   top: 37%;
   height: 20%;
   width: 100%;
-  background-color: #fff;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
+  background-color:transparent;
 }
 .development_trend_title {
   margin: 10px 20px;
   padding: 5px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  margin: 2%;
+  letter-spacing: 4px;
 }
 #development_trend_line {
   width: 450px;

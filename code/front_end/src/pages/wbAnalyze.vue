@@ -1,8 +1,32 @@
 <template>
   <div class="wbAnalyze">
-
     <css-doodle>
-      
+      :doodle {
+      @grid: 1x3 / 100vmax;
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 0;
+      }
+
+      @size: 100% 150%;
+      position: absolute;
+
+      background: @m(100, (
+      linear-gradient(transparent, @p(
+      #FFFDE1@repeat(2, @p([0-9a-f])),
+      #FB3569@repeat(2, @p([0-9a-f]))
+      ))
+      @r(0%, 100%) @r(0%, 100%) /
+      @r(1px) @r(23vmin)
+      no-repeat
+      ));
+
+      will-change: transform;
+      animation: f 20s linear calc(-20s / @size() * @i()) infinite;
+      @keyframes f {
+      from { transform: translateY(-100%) }
+      to { transform: translateY(100%) }
+      }
     </css-doodle>
 
     <div class="side">
@@ -11,6 +35,13 @@
     <div class="container">
       <div class="top">
         <Search />
+        <div class="head_top head_top_right">
+          <img class="img-responsive" src="../assets/img/ksh32.png">
+        </div>
+        <div class="wbtitle">微博舆情分析</div>
+        <div class="head_top">
+          <img class="img-responsive" src="../assets/img/ksh31.png">
+        </div>
       </div>
       <div class="main">
         <div class="left">
@@ -71,15 +102,46 @@ css-doodle {
   justify-content: center;
   /* 将<css-doodle>元素的 z-index 设置为 -1，使其在其他元素之下 */
   z-index: -1;
+  background-color: #061436;
+}
+
+.head_top {
+  position: relative;
+}
+
+.head_top img {
+  width: 80%;
+  margin: 2% 0;
+}
+
+.head_top p {
+  width: 100%;
+  text-align: center;
+  color: #55bfff;
+  position: absolute;
+  bottom: -18px;
+  left: -10px;
+}
+
+.head_top p span {
+  font-family: 'yjsz';
+  font-size: 20px;
+}
+.head_top_right{
+  margin-left: 1%;
 }
 
 .wbAnalyze {
-  background-color: rgb(106, 88, 88);
+  background-color: transparent;
   z-index: 1;
   width: 100%;
   display: flex;
   height: 100%;
 }
+.visual_conBot_l{position:absolute;left:0;top:0;}
+.visual_conBot_2{position:absolute;right:0;top:0;}
+.visual_conBot_3{position:absolute;right:0;bottom:0;}
+.visual_conBot_4{position:absolute;left:0;bottom:0;}
 
 .side {
   width: 3.5%;
@@ -97,7 +159,9 @@ css-doodle {
 }
 
 .top {
+  width: 100%;
   height: 6%;
+  display: flex;
 }
 
 .main {
@@ -136,6 +200,7 @@ css-doodle {
   width: 100%;
   height: 41.8%;
 }
+
 .word {
   width: 100%;
   margin-bottom: 10px;
@@ -143,5 +208,4 @@ css-doodle {
 
 .graph {
   width: 100%;
-}
-</style>
+}</style>

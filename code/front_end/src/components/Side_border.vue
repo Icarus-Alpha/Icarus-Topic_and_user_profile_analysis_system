@@ -2,7 +2,7 @@
   <div class="side">
     <div class="side_background"></div>
     <div class="logo" @click="ToHome" href="#" title="返回主菜单"></div>
-    <div class="wb" @click="ToWB" href="#" title="返回博客热点页">
+    <div class="wb" @click="ToWB" href="#" title="返回舆情分析页">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-weibo-copy"></use>
       </svg>
@@ -40,15 +40,15 @@ export default {
 }
 .side_background {
   background: transparent;
-  width: 100%;
+  width: 50px;
   height: 100%;
 }
 .logo {
   position: relative;
   top: -100vh;
   width: 50px;
-  height: 50px;
-  background: #68a2e6 url("../assets/img/logo.png") no-repeat center center/40px;
+  height: 6.5%;
+  background: #61DAFB url("../assets/img/logo.png") no-repeat center center/40px;
 }
 .logo:hover {
   cursor: pointer;
@@ -56,19 +56,21 @@ export default {
 .wb {
   position: relative;
   top: -100vh;
+  height: 6.5%;
 }
 .wb:hover {
   cursor: pointer;
 }
 .user{
   position: relative;
-  bottom: 22vh;
+  bottom: 22%;
+  height: 6.5%;
 }
 .user:hover {
   cursor: pointer;
 }
 .icon {
   width: 50px;
-  height: 50px;
+  height: 100%;
 }
 </style>

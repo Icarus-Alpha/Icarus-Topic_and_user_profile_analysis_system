@@ -1,5 +1,10 @@
 <template>
   <div class="topic_analysis">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
+
     <div class="topic_analysis_title">主题分析</div>
     <div id="topic_analysis_graph"></div>
   </div>
@@ -72,13 +77,19 @@ export default {
   width: 100%;
   height: 25%;
   top: 20%;
-  background-color: #fff;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
+  background-color:transparent;
 }
 .topic_analysis_title {
   margin: 10px 20px;
   padding: 5px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  margin: 2%;
+  letter-spacing: 4px;
 }
 #topic_analysis_graph {
   width: 450px;

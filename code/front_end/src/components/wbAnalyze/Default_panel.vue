@@ -1,5 +1,9 @@
 <template>
   <div class="default_panel">
+    <!-- <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png"> -->
     <div class="refresh" @click="refresh">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-shuaxin"></use>
@@ -137,12 +141,20 @@ export default {
 </script>
 
 <style scpoed>
+.title_text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  margin: 2%;
+  letter-spacing: 4px;
+}
 .default_panel {
   height: 100%;
   width: 100%;
   /* background-color: #fff; */
   background-color:transparent;
-  box-shadow:inset 0 0 9px 1px white;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
 }
 .default_panel_top {
   padding-top: 10px;
@@ -198,6 +210,7 @@ export default {
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #ffffff;
 }
 .delete {
   display: inline-block;
@@ -214,6 +227,7 @@ export default {
   font-size: 12px;
   margin-bottom: 5px;
   text-align: center;
+  color: #009a9a;
 }
 .icon {
   width: 30px;

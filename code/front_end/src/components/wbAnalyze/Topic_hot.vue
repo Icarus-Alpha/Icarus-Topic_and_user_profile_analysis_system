@@ -1,5 +1,9 @@
 <template>
   <div class="topic_hot">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="topic_hot_top">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-redu"></use>
@@ -126,18 +130,25 @@ export default {
 .topic_hot {
   /* background-color: #fff; */
   background-color:transparent;
-  box-shadow:inset 0 0 9px 1px white;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
   height: 42%;
   position: relative;
 }
 #lineChart {
   left: 20px;
-  width: 875px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
 .topic_hot_top {
   height: 10%;
   margin-left: 20px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+.topic_hot_top span {
+  margin: 2%;
 }
 .topic_hot_top .radio {
   position: absolute;

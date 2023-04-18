@@ -1,6 +1,11 @@
 <template>
   <div class="participation_graph">
-    <div id="participation_graph"></div>
+    <div id="participation_graph">
+      <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		  <img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		  <img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		  <img class="visual_conBot_4" src="../../assets/img/ksh45.png">
+    </div>
   </div>
 </template>
 
@@ -81,15 +86,17 @@ export default {
 </script>
 
 <style scoped>
-.participation_graph {
+/* .participation_graph {
   width: 1080px;
   height: 840px;
   background-color: transparent;
   box-shadow:inset 0 0 9px 1px white;
-}
-/* #participation_graph{
+} */
+#participation_graph{
     width: 1080px;
     height: 840px;
     background-color:transparent;
-} */
+    box-shadow:inset 0 0 7px 1px #6eb6ff;
+    border-radius: 10px;
+}
 </style>

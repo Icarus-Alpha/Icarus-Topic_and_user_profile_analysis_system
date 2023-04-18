@@ -1,5 +1,9 @@
 <template>
   <div class="word_cloud">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="word_cloud_top">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-ciyuntu"></use>
@@ -104,7 +108,8 @@ export default {
   height: 30%;
   /* background-color: #fff; */
   background-color:transparent;
-  box-shadow:inset 0 0 9px 1px white;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
 }
 .word_cloud_top {
   margin-left: 10px;

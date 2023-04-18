@@ -70,7 +70,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow:inset 0 0 9px 1px white;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
 }
 .participation_list_title {
   position: relative;
@@ -98,24 +99,25 @@ export default {
   background: #fff;
 }
 .participation_list_person_list {
-  height: 13vh;
+  height: 15%;
   border-top: 1px solid #aaa;
 }
 .nf{
   display: flex;
+  height: 68%;
 }
 .person_head img {
-  margin: 20px 0 0 20px;
+  margin: 5px 0 0 20px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
 }
 .person_info {
-  margin: 25px 0 0 20px;
+  margin: 10px 0 0 20px;
   flex :1;
 }
 .person_name {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   color: deepskyblue;
 }
 .person_time {
@@ -123,9 +125,10 @@ export default {
   font-size: 0.5rem;
 }
 .mark{
-  margin: 10px 0  0 10px;
-  font-size: 18px;
+  margin: 0 0  0 10px;
+  font-size: 14px;
   font-weight: 600;
   color: #62acfc;
+  height: 32%;
 }
 </style>

@@ -120,7 +120,7 @@ export default {
 
 
 .blog_btn {
-  margin: 10% 5px;
+  margin: 8px 30px 0 0;
   height: 95%;
   width: 90%;
 }
@@ -162,6 +162,19 @@ export default {
 
 .searchResult::-webkit-scrollbar {
   display: none;
+}
+
+.wbtitle {
+  font-size: 35px;
+  font-weight: 500;
+  color: #89ffff;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin: 0;
+  width:30%;
+  z-index: 2;
+  font-family: iconfont;
 }
 
 .userinfo {

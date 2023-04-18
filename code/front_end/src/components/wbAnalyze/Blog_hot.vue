@@ -1,10 +1,15 @@
 <template>
   <div class="blog_hot">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="blog_hot_top">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-redu"></use>
       </svg>
       <span>博文热度前十</span>
+      <img src="../../assets/img/ksh33.png">
     </div>
     <div class="ten_hot_blogs">
       <div class="hot_blog" v-for="(hot_blog, index) in hot_blogs" :key="index">
@@ -17,10 +22,7 @@
         <div class="blog_text" @click="ToBolgDetail(hot_blog.weibo_id)">
           {{ hot_blog.text | snippet }}
         </div>
-        <div
-          class="proportional_bar"
-          :style="{ '--width': hot_blog.hot_proportion }"
-        ></div>
+        <div class="proportional_bar" :style="{ '--width': hot_blog.hot_proportion }"></div>
         <div class="blog_redu">{{ hot_blog.hot_count }}</div>
       </div>
     </div>
@@ -50,7 +52,7 @@ export default {
   methods: {
     requsetHotBlog(id) {
       this.$axios
-        .get("blog_rank?tag_task_id="+id)
+        .get("blog_rank?tag_task_id=" + id)
         .then((res) => {
           this.hot_blogs = res.data.data;
           console.log(this.hot_blogs)
@@ -70,7 +72,7 @@ export default {
     ToBolgDetail(weibo_id) {
       this.$router.push({
         path: "/blog_detail",
-        query :{
+        query: {
           tag_task_id: this.tag_task_id,
           weibo_id: weibo_id
         }
@@ -91,59 +93,91 @@ export default {
 </script>
 
 <style scpoed>
+.visual_conBot_l{position:absolute;left:0;top:0;}
+.visual_conBot_2{position:absolute;right:0;top:0;}
+.visual_conBot_3{position:absolute;right:0;bottom:0;}
+.visual_conBot_4{position:absolute;left:0;bottom:0;}
+
+.blog_hot_top span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  margin: 2%;
+  letter-spacing: 4px;
+}
+
+.blog_hot_top img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .blog_hot {
   position: relative;
   /* background-color: white; */
-  box-shadow:inset 0 0 9px 1px white;
-  background-color:transparent;
+  box-shadow: inset 0 0 7px 1px #6eb6ff;
+  background-color: transparent;
   /* 设置背景透明度 */
   /* background-color: #fff;
   opacity: 0.5; */
   height: 57%;
+  border-radius: 10px;
 }
+
 .blog_hot_top {
   margin: 0 0 0 20px;
   position: relative;
-  height: 16%;
+  height: 12%;
 }
-.learnmore{
+
+.learnmore {
   position: relative;
   float: top;
-  height: 15%;
+  height: 12%;
 }
+
 .learnmore button {
   display: block;
   margin: 0 auto;
-  color: #3ae050;
-  width: 20%;
+  color: #8330fe;
+  width: 15%;
   height: 60%;
   background-color: #fff;
-  border: 0.1rem solid #3ae050;
+  border: 0.1rem solid #8330fe;
   transition: 0.3s;
 }
+
 .learnmore button:hover {
   letter-spacing: 2px;
   color: #fff;
-  background-color: #3ae050;
+  background-color: #8330fe;
 }
+
 .ten_hot_blogs {
-  height: 65%;
+  height: 75%;
   position: relative;
   margin-left: 70px;
   margin-top: 10px;
 }
+
 .hot_blog {
   float: top;
-  margin: 1% 0;
+  margin: 0.7% 0;
   width: 100%;
   height: 8%;
 }
+
 .serial_number,
 .blog_text,
 .blog_redu,
 .proportional_bar {
   display: inline-block;
 }
+.blog_redu{
+  color: #8707ff;
+}
+
 .serial_number {
   margin-right: 20px;
   width: 20px;
@@ -153,23 +187,32 @@ export default {
   color: #fff;
   background-color: #ccc;
 }
+
 .red {
   background-color: rgb(255, 0, 0);
 }
+
 .orange {
   background-color: rgb(255, 153, 0);
 }
+
 .green {
   background-color: rgb(0, 255, 13);
 }
+
 .blog_text {
   width: 50%;
-}
-.blog_text:hover{
-  cursor: pointer;
-  color: #0fbcf9;
+  color: #FFFFFF;
+  font-size: 14px;
   letter-spacing: 1px;
 }
+
+.blog_text:hover {
+  cursor: pointer;
+  color: #0fbcf9;
+  letter-spacing: 1.5px;
+}
+
 .proportional_bar {
   height: 50%;
   width: 30%;
@@ -177,33 +220,38 @@ export default {
   border-radius: 6px;
   margin-right: 5px;
 }
+
 .proportional_bar::before {
   content: "";
   display: block;
   padding-left: 5px;
-  height: 16px;
+  height: 100%;
   max-width: var(--width);
   background-color: #b3e2f3;
   bottom: -28px;
   border-radius: 6px;
 }
+
 .proportional_bar::before {
-  background-image: linear-gradient(90deg, #0fbcf9, #34e7e4);
+  background-image: linear-gradient(90deg, #6526fa,#8c33ff, #a166fb);
 }
+
 .proportional_bar::before {
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
+
 .proportional_bar::before {
   animation-name: slide;
 }
+
 @keyframes slide {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
-}
-</style>
+}</style>

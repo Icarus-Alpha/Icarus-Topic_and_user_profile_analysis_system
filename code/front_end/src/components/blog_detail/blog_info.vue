@@ -1,5 +1,9 @@
 <template>
   <div class="blog_info">
+    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
+		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
+		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
     <div class="blog_info_title">博文详情</div>
     <div class="user_info">
       <div
@@ -88,13 +92,19 @@ export default {
   height: 35%;
   margin-left: 5px;
   width: 100%;
-  background-color: #fff;
+  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  border-radius: 10px;
+  background-color:transparent;
 }
 .blog_info_title {
   margin: 10px 20px;
   padding: 5px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #fff;
+  font-size: 14px;
+  margin: 2%;
+  letter-spacing: 4px;
 }
 .user_info {
   margin-left: 20px;
@@ -114,6 +124,7 @@ export default {
 .blog_content {
   font-size: 14px;
   margin: 5px 20px;
+  color: #FFFFFF;
 }
 .follow_info {
   margin: 10px 20px;
