@@ -121,8 +121,8 @@ export default {
   font-size: 20px;
 }
 #chars_word_cloud {
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: 190px;
   top: -10px;
 }
 .icon {

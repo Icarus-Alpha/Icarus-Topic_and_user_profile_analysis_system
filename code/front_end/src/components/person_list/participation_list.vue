@@ -80,6 +80,7 @@ export default {
   font-size: 1.3rem;
   font-weight: 600;
   text-align: center;
+  color: #f0f0f0;
 }
 .participation_list_person_lists {
   width: 25vw;

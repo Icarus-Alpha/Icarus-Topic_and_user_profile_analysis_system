@@ -4,7 +4,6 @@
 		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
 		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
 		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
-
     <div class="cloud_graph_title">云图</div>
     <div id="graph_word_cloud"></div>
   </div>

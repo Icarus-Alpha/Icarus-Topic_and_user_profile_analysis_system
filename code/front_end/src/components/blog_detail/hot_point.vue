@@ -1,11 +1,11 @@
 <template>
   <div class="hot_point">
-    <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
+    <img src="../../assets/img/bgImg.png">
+    <!-- <img class="visual_conBot_l" src="../../assets/img/ksh42.png">
 		<img class="visual_conBot_2" src="../../assets/img/ksh43.png">
 		<img class="visual_conBot_3" src="../../assets/img/ksh44.png">
 		<img class="visual_conBot_4" src="../../assets/img/ksh45.png">
-
-    <div class="hot_point_title">热点转发</div>
+    <div class="hot_point_title">热点转发</div> -->
     <div class="hot_point_contents">
       <div
         class="hot_point_content"
@@ -65,9 +65,9 @@ export default {
   width: 100%;
   height: 54%;
   top: 46%;
-  box-shadow:inset 0 0 7px 1px #6eb6ff;
+  /* box-shadow:inset 0 0 7px 1px #6eb6ff;
   border-radius: 10px;
-  background-color:transparent;
+  background-color:transparent; */
 }
 .hot_point_title {
   margin: 10px 20px;

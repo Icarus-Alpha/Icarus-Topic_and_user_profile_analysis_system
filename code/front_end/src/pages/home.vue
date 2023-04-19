@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/img/school.jpg" alt="" />
+    <img src="../assets/img/earth.png" alt="" />
     <div class="table">
       <div class="bg" @click="bgClick">
         <h1>{{ currentTime }}</h1>
@@ -33,7 +33,7 @@
               <img src="../assets/img/favicon.png" alt="" />
             </a>
           </div>
-          <div>网络安全</div>
+          <div>待开发</div>
         </div>
         <div class="box">
           <div class="content">
@@ -41,7 +41,7 @@
               <img src="../assets/img/favicon.png" alt="" />
             </a>
           </div>
-          <div>网络安全</div>
+          <div>待开发</div>
         </div>
         <div class="box">
           <div class="content" @click="ToLogin">

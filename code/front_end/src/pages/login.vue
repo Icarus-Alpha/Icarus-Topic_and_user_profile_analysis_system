@@ -4,7 +4,7 @@
       <!-- 注册页面 -->
       <div class="container-form container-signup">
         <form action="javascript:void(0);" class="form">
-          <h2 class="form-title">注册界面</h2>
+          <h2 class="form-title">注册</h2>
           <input
             type="text"
             placeholder="用户名"
@@ -29,7 +29,7 @@
       <!-- 登录页面 -->
       <div class="container-form container-signin">
         <form action="javascript:void(0);" class="form">
-          <h2 class="form-title">登录界面</h2>
+          <h2 class="form-title">登录</h2>
           <input
             type="text"
             placeholder="用户名"
@@ -186,7 +186,7 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("https://cdn.pixabay.com/photo/2020/01/30/12/28/st-petersburg-4805301_960_720.jpg")
+  background: url("https://www.helloimg.com/images/2023/04/19/oXuGXt.png")
     no-repeat fixed center;
   background-size: cover;
 }
@@ -195,7 +195,7 @@ a {
   position: relative;
   width: 50%;
   height: 70vh;
-  background-color: #e9e9e9;
+  background-color: #080e1542;
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3),
     0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
@@ -251,7 +251,7 @@ a {
   left: -100%;
   width: 200%;
   height: 100%;
-  background: url("https://cdn.pixabay.com/photo/2020/01/30/12/28/st-petersburg-4805301_960_720.jpg")
+  background: url("https://www.helloimg.com/images/2023/04/19/oXuGXt.png")
     no-repeat fixed center;
   background-size: cover;
   transition: transform 0.5s ease-in-out;
@@ -305,7 +305,7 @@ a {
   border-radius: 2rem;
   max-width: 220px;
   border-radius: 12px;
-  color: #000000;
+  color: #ffffff;
   border: 1.5px solid lightgrey;
   outline: none;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
@@ -329,11 +329,13 @@ a {
   margin: 0.5rem 0;
   padding: 1rem;
   max-width: 240px;
+  color: #c6c3c3;
 }
 /* 设置表单标题样式 */
 .form-title {
   font-weight: 300;
   margin-bottom: 1rem;
+  color: #c6c3c3;
 }
 
 /* 只设置表单按钮的外边距 */
